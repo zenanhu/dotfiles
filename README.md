@@ -852,6 +852,21 @@ sudo !!
 ```
 
 关于bash的History Expansion参考[Linux Bash History Expansion Examples You Should Know](http://www.thegeekstuff.com/2011/08/bash-history-expansion/)。
+#### How to get params of last command 
+```bash
+!^      first argument
+!$      last argument
+!*      all arguments
+!:2     second argument
+
+!:2-3   second to third arguments
+!:2-$   second to last arguments
+!:2*    second to last arguments
+!:2-    second to next to last arguments
+
+!:0     the command
+!!      repeat the previous line
+```
 
 ### 2.  \^status\^restart
 
